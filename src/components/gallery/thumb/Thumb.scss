@@ -1,0 +1,38 @@
+@import "../../../styles/utils/variables.scss";
+
+.thumb {
+    height: 300px;
+    width: 300px;
+    border-radius: 10px;
+    background: linear-gradient(0deg, rgba(12, 12, 12, 0.774) 0%, rgb(94 94 94 / 55%) 100%);
+    overflow: hidden;
+    object-fit: fill;
+    position: relative;
+    transition: 0.1s;
+
+    img {
+        object-fit: cover;
+        width: 300px;
+        height: 300px;
+        position: relative;
+        mix-blend-mode: overlay;
+        transition: 0.5s;
+    }
+    img:hover {
+        scale:1.1
+    }
+    h3 {
+        margin: 20px;
+        color: #fff;
+        font-family: Montserrat;
+        font-size: 17px;
+        font-weight: 500;
+        position: absolute;
+        top: 78%;
+        z-index: 2;
+    }
+    &:active{
+        scale: 1.03;
+    }
+}
+

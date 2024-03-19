@@ -1,0 +1,19 @@
+@import "../../styles/utils/variables.scss";
+
+.gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 50px;
+    background-color: $color-background;
+    border-radius: 25px;
+
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin: 0;
+        padding: 0;
+        gap: 40px;
+    }
+}

@@ -1,0 +1,8 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+    @media screen and (max-width: 640px) {
+            margin: 20px;
+    }
+}

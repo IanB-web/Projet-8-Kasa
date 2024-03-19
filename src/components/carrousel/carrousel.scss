@@ -1,0 +1,53 @@
+@import "../../styles/utils/variables.scss";
+
+.carrousel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    height: 415px;
+    position: relative;
+    overflow: hidden;
+    object-fit: cover;
+    border-radius: 25px;
+    &__img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        object-fit: cover;
+        object-position: center;
+    }
+    &__count{
+        bottom:0px;
+        position: absolute;
+        padding: 4px;
+        color: $color-white;
+        background-color: rgba(71, 61, 59, 0.233);
+        border-radius: 10px;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-weight: 500;
+    }
+}
+
+.arrow {
+    position: absolute;
+    cursor: pointer;
+    opacity: 0.4;
+    transition: all 0.3s ease;
+    &__left {
+        left: 30px;
+    }
+    &__right {
+        right: 30px;
+    }
+    &:hover {
+        transform: scale(1.1);
+        opacity: 1;
+    }
+    &:active{
+        transform: scale(1.2);
+    }
+}

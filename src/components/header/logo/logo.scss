@@ -1,0 +1,23 @@
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 211px;
+    margin: 0;
+    padding: 0;
+    transition: 0.3s;
+}
+
+@media screen and (max-width: 640px) {
+    .logo {
+        width: 158px;
+        height: 68px;
+    }
+}
+@media  screen and (max-width: 413px){
+    .logo {
+        width: 100px;
+        height: 68px;
+    }
+}
